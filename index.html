@@ -1,0 +1,400 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Himanshu Business Hub</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #081426;
+    color: white;
+}
+
+header {
+    padding: 22px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #101f35;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: #e9bd67;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.hero {
+    min-height: 520px;
+    padding: 90px 20px;
+    text-align: center;
+    background: linear-gradient(135deg,#10233e,#203d5e);
+}
+
+.hero h1 {
+    font-size: clamp(35px,6vw,58px);
+    color: #e9bd67;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.9;
+    color: #dce5ef;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 25px;
+    margin: 12px 5px;
+    background: #e9bd67;
+    color: #081426;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: white;
+}
+
+section {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+h2 {
+    color: #e9bd67;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 22px;
+}
+
+.card {
+    padding: 30px;
+    background: #142944;
+    border-radius: 12px;
+    line-height: 1.8;
+}
+
+.card h3 {
+    color: #e9bd67;
+    margin-bottom: 15px;
+}
+
+.owner {
+    background: #101f35;
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+    max-width: 550px;
+    margin: 12px auto;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #60738a;
+    background: #142944;
+    color: white;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+#chatbox {
+    max-width: 550px;
+    margin: auto;
+    background: #142944;
+    padding: 22px;
+    border-radius: 12px;
+}
+
+#messages {
+    min-height: 80px;
+    text-align: left;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+footer {
+    background: #050c17;
+    padding: 30px;
+    text-align: center;
+    color: #b9c6d5;
+    line-height: 2;
+}
+
+@media(max-width:600px) {
+    header {
+        justify-content: center;
+    }
+    nav {
+        text-align: center;
+    }
+    nav a {
+        display: inline-block;
+        font-size: 13px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">HIMANSHU BUSINESS HUB</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#business">Business</a>
+        <a href="#partner">Partnership</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+    <h1>Let's Build Something Great Together</h1>
+
+    <p>
+        Welcome to Himanshu Business Hub.
+        Explore business collaboration opportunities
+        in manufacturing and logistics.
+
+        Connect with us to discuss potential partnerships
+        and future business opportunities.
+    </p>
+
+    <a href="#partner" class="btn">Explore Partnership</a>
+    <a href="#contact" class="btn">Contact Owner</a>
+</div>
+
+<section id="business">
+    <h2>Our Business Areas</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Manufacturing</h3>
+            <p>
+                Business development and manufacturing
+                opportunities with a focus on quality
+                and applicable regulatory compliance.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Transportation</h3>
+            <p>
+                Logistics and transportation business
+                opportunities, including consideration
+                of applicable handling requirements.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Partnership</h3>
+            <p>
+                Connect with us to discuss collaboration,
+                business ideas and potential partnerships.
+            </p>
+        </div>
+
+    </div>
+
+    <p style="margin-top:25px;color:#b9c6d5;">
+        Pharmaceutical activities, where applicable,
+        must be conducted only by appropriately
+        licensed and authorized businesses.
+    </p>
+</section>
+
+<section id="partner">
+    <h2>Become Our Business Partner</h2>
+
+    <p>
+        Are you interested in exploring a business
+        partnership with Himanshu?
+    </p>
+
+    <a class="btn"
+       href="https://wa.me/918960594956?text=Hello%20Himanshu%2C%20I%20am%20interested%20in%20a%20business%20partnership.">
+       YES, I'M INTERESTED
+    </a>
+
+    <a class="btn" href="#doubts">
+       I HAVE A QUESTION
+    </a>
+
+</section>
+
+<section class="owner" id="contact">
+    <h2>Meet The Owner</h2>
+
+    <div class="card">
+        <h3>Himanshu</h3>
+        <p>Business Owner</p>
+
+        <p>Phone: 8960594956</p>
+
+        <p>Email: ashusinghald2005@gmail.com</p>
+
+        <a class="btn"
+           href="https://wa.me/918960594956">
+           WhatsApp Owner
+        </a>
+
+        <a class="btn"
+           href="mailto:ashusinghald2005@gmail.com">
+           Send Email
+        </a>
+    </div>
+</section>
+
+<section id="doubts">
+    <h2>Have Any Doubts?</h2>
+
+    <p>Ask our business FAQ assistant.</p>
+
+    <div id="chatbox">
+
+        <div id="messages">
+            <b>Assistant:</b>
+            Hello! Welcome to Himanshu Business Hub.
+            How can I help you?
+        </div>
+
+        <input
+            type="text"
+            id="question"
+            placeholder="Type your question here..."
+        >
+
+        <button class="btn" onclick="askBot()">
+            Ask Assistant
+        </button>
+
+        <button class="btn" onclick="sendToOwner()">
+            Send Query to Himanshu
+        </button>
+
+    </div>
+</section>
+
+<footer>
+    <h3 style="color:#e9bd67;">
+        HIMANSHU BUSINESS HUB
+    </h3>
+
+    <p>Manufacturing | Transportation | Partnerships</p>
+
+    <p>© 2026 Himanshu Business Hub. All rights reserved.</p>
+</footer>
+
+<script>
+
+async function askBot() {
+
+    let input = document.getElementById("question");
+    let messages = document.getElementById("messages");
+
+    let question = input.value.trim();
+
+    if (!question) {
+        alert("Please enter your question.");
+        return;
+    }
+
+    messages.innerHTML += "<br><b>You:</b> " +
+        escapeHTML(question);
+
+    try {
+
+        let response = await fetch("/ask", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                question: question
+            })
+        });
+
+        let data = await response.json();
+
+        messages.innerHTML += "<br><b>Assistant:</b> " +
+            escapeHTML(data.answer);
+
+    } catch(error) {
+
+        messages.innerHTML +=
+            "<br><b>Assistant:</b> Please contact the owner.";
+
+    }
+
+    input.value = "";
+}
+
+function sendToOwner() {
+
+    let question =
+        document.getElementById("question").value.trim();
+
+    if (!question) {
+        alert("Please type your query first.");
+        return;
+    }
+
+    let message =
+        "Hello Himanshu, I have a business enquiry: " + question;
+
+    let url =
+        "https://wa.me/918960594956?text=" +
+        encodeURIComponent(message);
+
+    window.open(url, "_blank");
+
+}
+
+function escapeHTML(text) {
+    return text.replace(/[&<>"']/g, function(c) {
+        return {
+            "&": "&amp;",
+            "<": "&lt;",
+            ">": "&gt;",
+            '"': "&quot;",
+            "'": "&#39;"
+        }[c];
+    });
+}
+
+</script>
+
+</body>
+</html>
